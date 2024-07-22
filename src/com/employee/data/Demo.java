@@ -18,10 +18,11 @@ public class Demo
         totalNoOfDays = sc.nextInt();
         int totalHours = totalNoOfDays * fullDay;
         int counter = 0;
-        for (int i = 1; i <= totalNoOfDays; i++) {
         Random random=new Random();
-        int attendance=random.nextInt(3);
         
+        for (int i = 1; i <= totalNoOfDays; i++) 
+        {
+        int attendance=random.nextInt(3);
         switch ( attendance ) {
         case 1:
 
@@ -46,10 +47,11 @@ public class Demo
             System.out.println("The daily wage of Employee is : " + dailyWage);
             System.out.println(" \n ");
             break;
-    }
+         }
 
           monthlyWage = monthlyWage + dailyWage;
       }
+        
         System.out.println("\n");
         if(totalHours >= 100 || counter >= 20) {
             System.out.println("The monthly wage of employee is : " + monthlyWage);
