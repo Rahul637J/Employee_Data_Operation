@@ -18,6 +18,7 @@ public class Demo
         totalNoOfDays = sc.nextInt();
         int totalHours = totalNoOfDays * fullDay;
         int counter = 0;
+        int totalNoOfDays = 20;
         Random random=new Random();
         
         for (int i = 1; i <= totalNoOfDays; i++) 
@@ -25,6 +26,7 @@ public class Demo
         int attendance=random.nextInt(3);
         switch ( attendance ) {
         case 1:
+
 
             System.out.println("Employee is Present on day and is working full time : " + i);
             dailyWage = wagePerHour * fullDay;
