@@ -15,27 +15,26 @@ public class Demo
         int attendance=random.nextInt(3);
         
         switch ( attendance ) {
-        case 0:
+        case 1:
             System.out.print("Employee is Present");
             System.out.println("");
             System.out.print("The daily wage of Employee is : " + ( wagePerHour * fullDay * totalNoOfDays ));
             System.out.println("");
             break;
 
-        case 1:
+        case 2:
             System.out.print("Employee is Present but working part time ");
             System.out.println("");
             System.out.print("The daily wage of Employee is : " + ( wagePerHour * halfDay * totalNoOfDays ));
             System.out.println("");
             break;
 
-        case 2:
+        case 0:
             System.out.print("Employee is Absent");
             System.out.println("");
             System.out.println("The daily wage of Employee is : 0 ");
             System.out.println("");
             break;
 
-       }
 	}
 }
