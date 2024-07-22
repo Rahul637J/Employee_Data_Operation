@@ -23,7 +23,7 @@ public class Demo
         int attendance=random.nextInt(3);
         
         switch ( attendance ) {
-        case 0:
+        case 1:
 
             System.out.println("Employee is Present on day and is working full time : " + i);
             dailyWage = wagePerHour * fullDay;
@@ -32,7 +32,7 @@ public class Demo
             counter = counter + 1;
             break;
 
-        case 1:
+        case 2:
             System.out.print("Employee is Present but working part time on day : " + i);
             System.out.println("");
             dailyWage = wagePerHour * halfDay;
@@ -40,7 +40,7 @@ public class Demo
             System.out.println(" \n ");
             break;
 
-        case 2:
+        case 0:
             System.out.println("Employee is Absent on day :" + i);
             dailyWage = 0;
             System.out.println("The daily wage of Employee is : " + dailyWage);
